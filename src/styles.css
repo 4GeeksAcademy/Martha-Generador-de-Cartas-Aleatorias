@@ -1,0 +1,94 @@
+.container {
+  background-color: #1c831e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Estilos para el título h1 */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #181616;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  width: min(250px, 100%);
+  border-radius: 8px;
+  margin-top: 20px;
+  padding-inline: 10px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.suit_symbol {
+  height: 100px;
+  line-height: 100px;
+  font-size: 5em;
+}
+
+.card_suit--red {
+  color: rgb(209, 18, 18);
+}
+
+.card_suit--left {
+  text-align: left;
+}
+
+.card_suit--right {
+  text-align: right;
+  transform: rotateX(180deg);
+}
+
+.card__number {
+  height: 200px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 5em;
+}
+
+.buttonNewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.btn {
+  width: 150px;
+  margin-inline: auto;
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  border-radius: 5px;
+  background-color: rgb(224, 224, 79);
+  border: none;
+  align-self: start;
+  color: black; /* Color de texto inicial */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+/* Estilo al pasar el ratón sobre el botón */
+.btn:hover {
+  background-color: rgb(255, 5, 5);
+  color: white; /* Cambio de color del texto al pasar el ratón */
+}
+
+@media screen and (min-width: 750px) {
+  .bg {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .buttonNewCard {
+    margin-top: 20px;
+  }
+}
